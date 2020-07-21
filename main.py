@@ -616,6 +616,7 @@ if __name__ == '__main__':
         writer.writerows(baseline_measure)
     
     # t-test
+    print("Statistical Analysis:")
     measure_items = ['Recall', 'Precision', 'F1', 'Average_precision']
     for item in measure_items:
         tfidf_m_result = [ value[item] for value in tfidf_measure ]
@@ -623,6 +624,7 @@ if __name__ == '__main__':
         baseline_m_result = [ value[item] for value in baseline_measure ]
         tfidf_t_stat, tfidf_p_value = stats.ttest_ind(tfidf_m_result, baseline_m_result, equal_var=False)
         bm25_t_stat, bm25_p_value = stats.ttest_ind(bm25_m_result,baseline_m_result, equal_var=False)
+        print(f"========== {item} ==========")
         print(f"Mean value")
         print(f"tfidf = {mean(tfidf_m_result)}")
         print(f"bm25 = {mean(bm25_m_result)}")
