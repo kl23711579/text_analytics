@@ -20,12 +20,11 @@
 The baseline of this project is BM25 algorithm, the `baseline_feedback` is the result of baseline.
 
 In this project, two algorithms are employed:
-    
-    1. tfidf, the result is store in `tfidf_feedback`
 
-    2. bm25 with binary approach, the result is store in `bm25_feedback`
+1. tfidf, the result is store in `tfidf_feedback`
+2. boolean retrieve method and refine with bm25 algorithm, the result is stored in `bm25_feedback`
 
-The statistical result si shown on terminal.
+The statistical analysis is shown on terminal.
 
 # Team member
 
