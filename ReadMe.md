@@ -17,13 +17,15 @@
 
 # 4. Result
 
-The result of **Q3** is stored in `baseline_feedback`.
+The baseline of this project is BM25 algorithm, the `baseline_feedback` is the result of baseline.
 
-The result of **Q5** is stored in `tfidf_feedback` and `bm25_feedback`.
+In this project, two algorithms are employed:
+    
+    1. tfidf, the result is store in `tfidf_feedback`
 
-The result of **Q6** is stored in `EvaluationResult_baseline.dat`, `EvaluationResult_tfidf.dat` and `EvaluatioResult_BM25`.
+    2. bm25 with binary approach, the result is store in `bm25_feedback`
 
-The result of **Q7** is shown on terminal.
+The statistical result si shown on terminal.
 
 # Team member
 
